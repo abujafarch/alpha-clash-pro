@@ -70,18 +70,18 @@
                 </div>
                 <!-- keyboard end -->
                 <div class="flex justify-between">
-                    <button class="bg-[#894189] flex items-center gap-2 rounded-[30px] px-6 py-[9px] text-white font-medium">Life <i class="fa-solid fa-heart"></i> 1</button>
-                    <button class="bg-[#360490] flex items-center gap-2 rounded-[30px] px-6 py-[9px] text-white font-medium">Score <i class="fa-solid fa-dollar-sign"></i> 1</button>
+                    <button class="bg-[#894189] flex items-center gap-2 rounded-[30px] px-6 py-[9px] text-white font-medium">Life <i class="fa-solid fa-heart"></i> <span id="life">5</span></button>
+                    <button class="bg-[#360490] flex items-center gap-2 rounded-[30px] px-6 py-[9px] text-white font-medium">Score <i class="fa-solid fa-dollar-sign"></i> <span  id="score">0</span></button>
                 </div>
-                <!-- life score  -->
+                <!-- life score -->
             </div>
         </section>
         <!-- playground end -->
-        <section class="score hidden">
+        <section id="final-score" class="score hidden">
             <div class="flex justify-center items-center h-screen">
                 <div class="max-w-[400px] p-10 h-[285px] flex flex-col gap-4 items-center justify-center border-[2px] rounded-3xl border-[#ffffff21] bg-gradient-to-br from-[#ffffff33] to-[#6109d4]">
-                    <h1 class="font-semibold text-[64px] text-center text-white">Score : 14</h1>
-                    <button class="text-2xl bg-white rounded-lg text-[#010313] font-semibold px-2 py-3 w-48"><i class="fa-solid fa-rotate-left"></i> Play Again</button>
+                    <h1 class="font-semibold text-[64px] text-center text-white">Score : <span id="score-counted">0</span></h1>
+                    <button onclick="playAgain()" class="text-2xl bg-white rounded-lg text-[#010313] font-semibold px-2 py-3 w-48"><i class="fa-solid fa-rotate-left"></i> Play Again</button>
                     <p class="text-white font-semibold">Practice will make you Pro</p>
                 </div>
             </div>
